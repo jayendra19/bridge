@@ -1,0 +1,78 @@
+# A map of chain names to ChainMetadata
+# Chains can be defined here, in chains.json, or in chains.ts
+# Chains already in the SDK need not be included here unless you want to override some fields
+# Schema here: https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/typescript/sdk/src/metadata/chainMetadataTypes.ts
+---
+# Example using local anvil chain:
+# anvil1:
+#   chainId: 31337
+#   domainId: 31337
+#   name: anvil1
+#   protocol: ethereum
+#   rpcUrls:
+#     - http: http://127.0.0.1:8545
+# anvil2:
+#   chainId: 31338
+#   domainId: 31338
+#   name: anvil2
+#   protocol: ethereum
+#   rpcUrls:
+#     - http: http://127.0.0.1:8555
+
+polygonamoy:
+  name: polygonamoy
+  chainId: 80002  
+  domainId: 80002 
+  protocol: ethereum
+  nativeToken: { name: 'POL', symbol: 'POL', decimals: 18 }
+  rpcUrls:
+    - http: https://rpc-amoy.polygon.technology 
+  blocks:
+    confirmations: 1
+
+bsctestnet:
+  name: bsctestnet
+  chainId: 97
+  domainId: 97
+  protocol: ethereum
+  nativeToken: { name: 'Binance Coin', symbol: 'tBNB', decimals: 18 }
+  rpcUrls:
+    - http: https://bsc-testnet.publicnode.com
+  blocks:
+    confirmations: 1
+
+polygon:
+  name: polygon
+  chainId: 137
+  domainId: 137
+  protocol: ethereum
+  nativeToken: { name: 'Matic', symbol: 'MATIC', decimals: 18 }
+  rpcUrls:
+    - http: https://polygon-mainnet.g.alchemy.com/v2/tDaFss9L7G5E6Q0z6kBkc26gUU5MGmY3
+  blocks:
+    confirmations: 1
+
+bsc:
+  name: bsc
+  chainId: 56
+  domainId: 56
+  protocol: ethereum
+  nativeToken: { name: 'Binance Coin', symbol: 'BNB', decimals: 18 }
+  rpcUrls:
+    - http: https://bsc-dataseed.binance.org/
+  blocks:
+    confirmations: 1
+
+solana:
+  name: solana
+  chainId: 1399811149 
+  domainId: 1399811149
+  protocol: sealevel
+  nativeToken:
+    name: 'Solana'
+    symbol: 'SOL'
+    decimals: 9
+  rpcUrls:
+    - http: https://api.mainnet-beta.solana.com
+  blocks:
+    confirmations: 1

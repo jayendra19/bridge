@@ -1,0 +1,74 @@
+# A list of Warp UI token configs and other options for the WarpCore
+# Configs can be defined here, in tokens.json, or in tokens.ts
+# The input here is typically the output of the Hyperlane CLI warp deploy command
+---
+# tokens:
+#   # Eth Mainnet HypNative token
+#   - chainName: polygon
+#     standard: EvmHypCollateral
+#     decimals: 18
+#     symbol: Deod
+#     name: Decentrawood
+#     addressOrDenom: '0xD5dB603afded61889043F3b8cf3Da7530cBa3E9a'
+#     collateralAddress: '0xE77aBB1E75D2913B2076DD16049992FFeACa5235' # polygon DEOD address
+#     logoURI: '/logos/decentrawood.png'
+#     connections:
+#       - { token: ethereum|bsc|0x7f4B7431a4E1B9f375EF0A94224eA4Ef09B4F668 }
+#   - chainName: bsc
+#     standard: EvmHypSynthetic
+#     decimals: 18 
+#     symbol: Deod
+#     name: Decentrawood
+#     addressOrDenom: '0x7f4B7431a4E1B9f375EF0A94224eA4Ef09B4F668' # Bsc DEOD address
+#     logoURI: '/logos/decentrawood.png'
+#     connections:
+#       - { token: ethereum|polygon|0xD5dB603afded61889043F3b8cf3Da7530cBa3E9a}
+
+
+# testnet nefi config
+# tokens:
+#       - chainName: bsctestnet
+#         standard: EvmHypCollateral
+#         decimals: 18
+#         symbol: Nefi
+#         name: NEXDEFI
+#         addressOrDenom: "0x12D63526169B9Baab408825EF9eae3e1B23db6ba"
+#         collateralAddressOrDenom: "0x7e3DCDEc60D6FE5d07de771613f2b1d2528145BB"
+#         logoURI: 'https://coral-adverse-leech-720.mypinata.cloud/ipfs/bafkreienq37puoqyvq4hgyoeommz3c4zceac44txuhhs4sue2yz2q4vhza'
+#         connections:
+#           - token: ethereum|polygonamoy|0x827c857Bcb82b56b644F323CCcf8B799386d0b58
+#       - chainName: polygonamoy
+#         standard: EvmHypSynthetic
+#         decimals: 18
+#         symbol: Nefi
+#         name: NEXDEFI
+#         addressOrDenom: "0x827c857Bcb82b56b644F323CCcf8B799386d0b58"
+#         logoURI: 'https://coral-adverse-leech-720.mypinata.cloud/ipfs/bafkreienq37puoqyvq4hgyoeommz3c4zceac44txuhhs4sue2yz2q4vhza'
+#         connections:
+#           - token: ethereum|bsctestnet|0x12D63526169B9Baab408825EF9eae3e1B23db6ba
+
+
+# mainnet nefi config
+tokens:
+      - chainName: bsc
+        standard: EvmHypCollateral
+        decimals: 18
+        symbol: Nefi
+        name: NEXDEFI
+        addressOrDenom: "0xcaA0F61327F26408EfEa1b6B8062FaCc3d98E906"
+        collateralAddressOrDenom: "0xeF57D11897fB03D7ecEc3B65e4608b2a1A1Fd16a"  # Bsc Nefi Token Add.
+        logoURI: 'https://coral-adverse-leech-720.mypinata.cloud/ipfs/bafkreienq37puoqyvq4hgyoeommz3c4zceac44txuhhs4sue2yz2q4vhza'
+        connections:
+          - token: ethereum|polygon|0x85c67EFcc0d49270F617C5873d4ECC9BE09CaFEC
+      - chainName: polygon
+        standard: EvmHypSynthetic
+        decimals: 18
+        symbol: Nefi
+        name: NEXDEFI
+        addressOrDenom: "0x85c67EFcc0d49270F617C5873d4ECC9BE09CaFEC"   # Poly Nefi Token Add.
+        logoURI: 'https://coral-adverse-leech-720.mypinata.cloud/ipfs/bafkreienq37puoqyvq4hgyoeommz3c4zceac44txuhhs4sue2yz2q4vhza'
+        connections:
+          - token: ethereum|bsc|0xcaA0F61327F26408EfEa1b6B8062FaCc3d98E906
+  
+ 
+      
